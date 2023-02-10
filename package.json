@@ -1,10 +1,9 @@
 {
-  "name": "electron-vite-react",
+  "name": "mini-games",
   "version": "2.1.0",
   "main": "dist-electron/main/index.js",
   "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
-  "license": "MIT",
+  "author": "jandhyeokCho-hub",
   "private": true,
   "debug": {
     "env": {

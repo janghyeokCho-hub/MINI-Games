@@ -1,5 +1,5 @@
 {
-  "appId": "ElectronViteReact",
+  "appId": "MINI Games",
   "asar": true,
   "directories": {
     "output": "release/${version}"
