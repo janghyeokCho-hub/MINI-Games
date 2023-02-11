@@ -1,5 +1,10 @@
+import LeftSideBar from "./LeftSideBar";
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <LeftSideBar />
+    </div>
+  );
 }
 
 export default App;
