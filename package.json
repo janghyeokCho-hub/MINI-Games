@@ -35,12 +35,17 @@
     "node": "^14.18.0 || >=16.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "6.3.0",
+    "@fortawesome/free-solid-svg-icons": "6.3.0",
+    "@fortawesome/react-fontawesome": "0.2.0",
     "@reduxjs/toolkit": "1.9.2",
     "@types/react-redux": "7.1.25",
     "@types/redux-logger": "3.0.9",
+    "@types/styled-components": "5.1.26",
     "react-pro-sidebar": "1.0.0",
     "react-redux": "8.0.5",
     "react-router-dom": "6.8.1",
-    "redux-logger": "3.0.6"
+    "redux-logger": "3.0.6",
+    "styled-components": "5.3.6"
   }
 }
