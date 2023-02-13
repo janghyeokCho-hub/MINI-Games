@@ -1,8 +1,10 @@
 import Cell from "./Cell";
 import styled from "styled-components";
+import { StageType } from "@/components/tetris/helpers";
+import { PlayerTypes } from "@/hooks/tetris/usePlayer";
 
 interface PropsTypes {
-  stage: Array<any>;
+  stage: StageType | PlayerTypes;
 }
 
 interface StyledPropsTypes {

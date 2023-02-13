@@ -1,6 +1,8 @@
-export const MINOS: {
-  [key: string]: { shape: (string | number)[][]; color: string };
-} = {
+export type ShapeType = (string | number)[][];
+export interface MinosTypes {
+  [key: string]: { shape: ShapeType; color: string };
+}
+export const MINOS: MinosTypes = {
   0: { shape: [[0]], color: "235, 245, 251" },
   I: {
     shape: [

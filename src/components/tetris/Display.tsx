@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface PropsTypes {
-  gameStatus: string;
+  gameStatus?: string;
   text: string;
 }
 
