@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-interface PropsTypes {
-  callback?: Function;
+interface ButtonProps {
+  callback?: () => void;
   text: string;
 }
 
@@ -20,8 +20,8 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
-const Button = ({ callback, text }: PropsTypes) => {
-  return <StyledButton>{text}</StyledButton>;
+const Button = ({ callback, text }: ButtonProps) => {
+  return <StyledButton onClick={callback}>{text}</StyledButton>;
 };
 
 export default Button;
