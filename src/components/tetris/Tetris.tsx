@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Stage from "./Stage";
 import Display from "./Display";
-import Button from "./Button";
+import StartButton from "./StartButton";
 
 import { createStage } from "./helpers";
 import styled from "styled-components";
@@ -90,7 +90,7 @@ const Tetris = () => {
               <Display text="Level" />
             </div>
           )}
-          <Button text="Start" onClick={() => startGame()} />
+          <StartButton text="Start" callback={startGame} />
         </aside>
       </StyledTetris>
     </StyledWrapper>
