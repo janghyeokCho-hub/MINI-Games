@@ -10,10 +10,6 @@ import styled from "styled-components";
 import { usePlayer } from "@/hooks/tetris/usePlayer";
 import { useStage } from "@/hooks/tetris/useStage";
 
-import { StageType } from "./helpers";
-import { PlayerTypes } from "@/hooks/tetris/usePlayer";
-import { PosTypes } from "@/hooks/tetris/usePlayer";
-
 const StyledWrapper = styled.div`
   width: 100vw;
   height: 100vh;
@@ -37,7 +33,7 @@ const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
   const [gameOver, setGameOver] = useState(false);
   const [player, updatePlayerPos, resetPlayer] = usePlayer();
-  const [stage, setStage] = useState<StageType | PlayerTypes>(player);
+  const [stage, setStage] = useState(player);
   console.log("re-render");
   //StageType | React.Dispatch<React.SetStateAction<StageType>>
   const movePlayer = (dir: number) => {

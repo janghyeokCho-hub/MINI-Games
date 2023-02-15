@@ -1,11 +1,6 @@
 import Cell from "./Cell";
 import styled from "styled-components";
 import { StageType } from "@/components/tetris/helpers";
-import { PlayerTypes } from "@/hooks/tetris/usePlayer";
-
-interface PropsTypes {
-  stage: StageType | PlayerTypes;
-}
 
 interface StyledPropsTypes {
   width?: number;
@@ -26,7 +21,7 @@ const StyledStage = styled.div<StyledPropsTypes>`
   background: #111;
 `;
 
-const Stage = ({ stage }: PropsTypes) => {
+const Stage = ({ stage }) => {
   return (
     <StyledStage width={stage[0].length} height={stage.length}>
       {stage?.map((row: any) =>

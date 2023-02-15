@@ -1,18 +1,6 @@
 import { useCallback, useState } from "react";
-import { randomMino, ShapeType } from "@/components/tetris/minos";
+import { randomMino } from "@/components/tetris/minos";
 import { STAGE_WIDTH } from "@/components/tetris/helpers";
-
-export interface PlayerTypes {
-  pos: PosTypes;
-  tetromino: ShapeType;
-  collided?: boolean;
-}
-
-export interface PosTypes {
-  x: number;
-  y: number;
-  collided?: boolean;
-}
 
 export const usePlayer = () => {
   const [player, setPlayer] = useState({
