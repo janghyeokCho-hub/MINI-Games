@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import LeftSideBar from "./LeftSideBar";
 import Home from "./container/home";
-import Tetris from "./container/tetris";
+import Tetris from "./container/tetris/tetris";
 
 function App() {
   return (
